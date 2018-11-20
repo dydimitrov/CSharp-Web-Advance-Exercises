@@ -1,0 +1,47 @@
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ChuskaUser> SignInManager
+@inject UserManager<ChuskaUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <ul class="nav navbar-nav navbar-left">
+        <li class="nav-item">
+            <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
+        </li>
+        @if (this.User.IsInRole("Admin"))
+        {
+            <li class="nav-item">
+                <a asp-controller="Product" asp-action="Create" class="nav-link nav-link-white">Create Product</a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Order" asp-action="All" class="nav-link nav-link-white">All Orders</a>
+            </li>
+        }
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-link navbar-btn navbar-link text-white">Logout</button>
+                </li>
+            </ul>
+        </form>
+    </ul>
+
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+            <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
+        </li>
+        <li class="nav-item">
+            <a asp-controller="Account" asp-action="Login" class="nav-link nav-link-white">Login</a>
+        </li>
+        <li class="nav-item">
+            <a asp-controller="Account" asp-action="Register" class="nav-link nav-link-white">Register</a>
+        </li>
+    </ul>
+}

@@ -1,0 +1,45 @@
+﻿@model Chuska.Models.ViewModels.Product.ProductEditViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<h1 class="text-center">Edit</h1>
+<hr class="hr-2 bg-dark" />
+<form asp-route="/Product/Edit/@Model.Id" class="mx-auto half-width" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" id="name" value="@Model.Name" name="name">
+    </div>
+    <div class="form-group">
+        <label asp-for="Price">Price</label>
+        <input asp-for="Price" class="form-control" type="number" value="@Model.Price" name="price">
+    </div>
+    <div class="form-group">
+        <label asp-for="Description">Description</label>
+        <textarea asp-for="Description" class="form-control" rows="4" value="@Model.Description" name="description"></textarea>
+    </div>
+    <h3 class="text-center">Product Type</h3>
+    <hr class="w-50 hr-2 bg-dark" />
+    <div class="form-group d-flex justify-content-around">
+        <label asp-for="@Model.ProductType" class="radio-inline">
+            <input asp-for="@Model.ProductType" type="radio" name="ProductType" value="Food" checked>Food
+        </label>
+        <label asp-for="@Model.ProductType" class="radio-inline">
+            <input asp-for="@Model.ProductType" type="radio" name="ProductType" value="Domestic">Domestic
+        </label>
+        <label asp-for="@Model.ProductType" class="radio-inline">
+            <input asp-for="@Model.ProductType" type="radio" name="ProductType" value="Health">Health
+        </label>
+        <label asp-for="@Model.ProductType" class="radio-inline">
+            <input asp-for="@Model.ProductType" type="radio" name="ProductType" value="Cosmetic">Cosmetic
+        </label>
+        <label asp-for="@Model.ProductType" class="radio-inline">
+            <input asp-for="@Model.ProductType" type="radio" name="ProductType" value="Other">Other
+        </label>
+    </div>
+    <hr class="hr-2 bg-dark half-width mt-4" />
+    <div class="button-holder mt-2 d-flex justify-content-center">
+        <button type="submit" class="btn chushka-bg-color">Edit</button>
+    </div>
+</form>
+

@@ -1,0 +1,20 @@
+﻿
+<div class="col-md-6">
+    <img src="{{{image-url}}}" style="height: 60%;width: 70%" />
+    <div class="row">
+        <h4 style="text-align: left;margin-left: 10%">Album Name:  {{{album-name}}}</h4>
+    </div>
+    <div class="row">
+        <h4 style="text-align: left;margin-left: 15%">Album Price:${{{album-price}}}</h4>
+    </div>
+    <a href="/Tracks/Create?Id={{{album-id}}}" class="btn btn-success">Create track</a>
+    <a href="/albums/all" class="btn btn-success" style="margin-left: 28%">Back To All</a>
+</div>
+<div class="col-md-6">
+    <h4><strong style="font-family: cursive;margin-left: 20px">Tracks</strong></h4>
+    <div style="display:{{{tracks}}}">
+        <ol>
+            {{{content-album}}}
+        </ol>
+    </div>
+</div>
