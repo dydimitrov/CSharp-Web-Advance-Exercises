@@ -9,15 +9,19 @@
         <li class="nav-item">
             <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
         </li>
-        @if (this.User.IsInRole("Admin"))
-        {
-            <li class="nav-item">
-                <a asp-controller="Product" asp-action="Create" class="nav-link nav-link-white">Create Product</a>
-            </li>
-            <li class="nav-item">
-                <a asp-controller="Order" asp-action="All" class="nav-link nav-link-white">All Orders</a>
-            </li>
-        }
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a asp-controller="Events" asp-action="All" class="dropdown-item">All Events</a>
+            </div>
+            @if (this.User.IsInRole("Admin"))
+            {
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a asp-controller="Events" asp-action="Create" class="dropdown-item">Create Event</a>
+                </div>
+            }
+        </li>
+
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
@@ -36,7 +40,7 @@ else
     <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
             <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
-        </li>        
+        </li>
     </ul>
     <ul class="nav navbar-nav navbar right">
         <li class="nav-item">

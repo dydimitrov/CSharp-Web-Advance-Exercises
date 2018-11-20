@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Services.deps.json
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Services.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Services.pdb
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Data.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Data.pdb
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.csproj.CopyComplete
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Services\obj\Debug\netcoreapp2.1\Eventures.Services.pdb

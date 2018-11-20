@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CopyComplete
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
+C:\Users\Admin\Desktop\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
