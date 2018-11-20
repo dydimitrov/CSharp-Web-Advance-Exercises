@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ProductListViewModel>
+@{
+    ViewData["Title"] = "_ProductsPartial";
+}
+
+<div class="container-fluid product-holder">
+    <div class="row d-flex justify-content-around">
+        @foreach (var item in Model)
+        {
+            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id" class="col-md-2">
+                <div class="product p-1 chushka-bg-color rounded-top rounded-bottom">
+                    <h5 class="text-center mt-3">@item.Name</h5>
+                    <hr class="hr-1 bg-white" />
+                    <p class="text-white text-center">
+                        @if (item.Description.Length > 50)
+                        {
+                            item.Description = item.Description.Substring(0, 50) + "...";
+                        }
+                        @item.Description
+                    </p>
+                    <hr class="hr-1 bg-white" />
+                    <h6 class="text-center text-white mb-3">$@item.Price</h6>
+                </div>
+            </a>
+        }
+    </div>
+</div>
+
