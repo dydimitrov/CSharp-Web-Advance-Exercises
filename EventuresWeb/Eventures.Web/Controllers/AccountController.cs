@@ -39,7 +39,9 @@ namespace Eventures.Web.Controllers
             var user = new EventuresUser()
             {
                 Email = model.Email,
-                FullName = model.FullName,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                UCN = model.UCN,         
                 UserName = model.Username
             };
             var result = this.signIn.UserManager.CreateAsync(user, model.Password).Result;

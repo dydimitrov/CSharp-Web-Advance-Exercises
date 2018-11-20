@@ -9,8 +9,16 @@ namespace Eventures.Models.ViewModels.Account
         public string Username { get; set; }
 
         [Required]
-        [Display(Name = "Full Name")]
-        public string FullName { get; set; }
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "UCN")]
+        public string UCN { get; set; }
 
         [Required]
         [EmailAddress]

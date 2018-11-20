@@ -5,7 +5,7 @@
 
     public class EventuresUser : IdentityUser
     {
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UCN { get; set; }
         public RoleType Role { get; set; }

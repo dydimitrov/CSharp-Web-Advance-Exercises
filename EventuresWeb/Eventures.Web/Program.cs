@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Eventures.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
@@ -12,6 +14,10 @@ namespace Eventures.Web
 {
     public class Program
     {
+        public Program(EventuresDbContext db)
+        {
+            db.Database.Migrate();
+        }
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
