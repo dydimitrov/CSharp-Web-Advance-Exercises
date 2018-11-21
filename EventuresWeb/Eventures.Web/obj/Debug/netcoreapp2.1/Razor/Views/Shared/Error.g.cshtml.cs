@@ -29,7 +29,7 @@ using Eventures.Models;
 #line default
 #line hidden
 #line 4 "C:\Users\Admin\Desktop\Eventures\Eventures.Web\Views\_ViewImports.cshtml"
-using Eventures.Models.ViewModels.Product;
+using Eventures.Models.ViewModels.Event;
 
 #line default
 #line hidden
@@ -39,7 +39,7 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"583387379a597938339285f5a623245873b0a91c", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e05227e9c14483ea15cd8bcc621abd25f79d4ef6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6aa244d81b4fd8e4473665547ed0a058d75306d3", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

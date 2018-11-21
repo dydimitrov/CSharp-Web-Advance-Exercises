@@ -9,10 +9,11 @@ using Eventures.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Eventures.Models;
-using Eventures.Web.Utilities;
+using Eventures.Web.Middlewares;
 using Eventures.Services.Contracts;
 using Eventures.Services;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Eventures.Web.Filters;
 
 namespace Eventures.Web
 {
@@ -80,10 +81,11 @@ namespace Eventures.Web
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            Seeder.Seed(provider);
+            //Seeder.Seed(provider);
 
             app.UseAuthentication();
 
+            app.UseDataseeder();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

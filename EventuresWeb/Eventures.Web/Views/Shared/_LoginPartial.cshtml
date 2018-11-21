@@ -5,30 +5,25 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <ul class="nav navbar-nav navbar-left">
-        <li class="nav-item">
-            <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a asp-controller="Events" asp-action="All" class="dropdown-item">All Events</a>
-            </div>
+        <ul class="nav navbar-nav navbar-left eventures-bg-color">
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-dark">Home</a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Events" asp-action="All" class="nav-link nav-link-dark">All Events</a>
+            </li>
             @if (this.User.IsInRole("Admin"))
             {
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a asp-controller="Events" asp-action="Create" class="dropdown-item">Create Event</a>
-                </div>
+                <li class="nav-item">
+                    <a asp-controller="Events" asp-action="Create" class="nav-link nav-link-dark">Create Event</a>
+                </li>
             }
-        </li>
-
-    </ul>
-
+        </ul>
     <ul class="nav navbar-nav navbar-right">
         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
-                    <button type="submit" class="btn btn-link navbar-btn navbar-link text-white">Logout</button>
+                    <button type="submit" class="btn btn-link navbar-btn navbar-link nav-link-dark">Logout</button>
                 </li>
             </ul>
         </form>
@@ -39,15 +34,15 @@ else
 {
     <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
-            <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-white">Home</a>
+            <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-dark">Home</a>
         </li>
     </ul>
     <ul class="nav navbar-nav navbar right">
         <li class="nav-item">
-            <a asp-controller="Account" asp-action="Register" class="nav-link nav-link-white">Register</a>
+            <a asp-controller="Account" asp-action="Register" class="nav-link nav-link-dark">Register</a>
         </li>
         <li class="nav-item">
-            <a asp-controller="Account" asp-action="Login" class="nav-link nav-link-white">Login</a>
+            <a asp-controller="Account" asp-action="Login" class="nav-link nav-link-dark">Login</a>
         </li>
     </ul>
 }

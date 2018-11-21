@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-using Eventures.Services.Contracts;
-using Eventures.Models.ViewModels.Product;
-using Eventures.Services;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Eventures.Web.Controllers
 {

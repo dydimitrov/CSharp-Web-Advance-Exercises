@@ -14,10 +14,11 @@ namespace Eventures.Web
 {
     public class Program
     {
-        public Program(EventuresDbContext db)
-        {
-            db.Database.Migrate();
-        }
+        //Constructor initialize db migration if don have middleware for that
+        //public Program(EventuresDbContext db)
+        //{
+        //    db.Database.Migrate();
+        //}
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();

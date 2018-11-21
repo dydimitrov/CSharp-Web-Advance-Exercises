@@ -15,12 +15,22 @@ textarea {
     resize: none;
 }
 
+.eventures-bg-color {
+    background-color: #AFEEEE;
+    color: #161616;
+}
+
 .chushka-bg-color {
     background-color: #DC143C;
     color: #F8F8FF;
 }
 
+
 .nav-link-dark {
+    color: black
+}
+
+.nav-link-blue {
     color: #C0C0C0
 }
 
