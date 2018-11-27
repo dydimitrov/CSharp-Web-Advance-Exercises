@@ -9,5 +9,7 @@ namespace Eventures.Services.Contracts
         void Create(string name, string place, DateTime startDate, DateTime endDate, int tickets, decimal price);
 
         IEnumerable<EventListViewModel> All();
+
+        IEnumerable<EventListViewModel> MyEvents(string username);
     }
 }

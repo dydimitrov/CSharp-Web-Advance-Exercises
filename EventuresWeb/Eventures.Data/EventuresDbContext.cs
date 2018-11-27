@@ -10,12 +10,9 @@ namespace Eventures.Data
             : base(options)
         {
         }
-        public DbSet<EventuresUser> Users { get; set; }
         public DbSet<Event> Events { get; set; }
-
-        public override int SaveChanges()
-        {
-            return base.SaveChanges();
-        }
+        
+        public  DbSet<Order> Orders { get; set; }
+        
     }
 }

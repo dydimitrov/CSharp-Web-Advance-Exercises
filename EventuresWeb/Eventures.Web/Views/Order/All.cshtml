@@ -1,0 +1,31 @@
+﻿@using Eventures.Models.ViewModels.Order
+@model IEnumerable<OrderListViewModel>
+@{
+    ViewData["Title"] = "My Events";
+    int counter = 1;
+}
+
+<h1 class="text-center font-weight-bold">All Events</h1>
+<hr class="hr-2 eventures-bg-color">
+
+<table class="table">
+    <thead>
+        <tr class="font-weight-bold">
+            <th scope="col">#</th>
+            <th scope="col">Event</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Ordered On</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in @Model)
+        {
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@item.EventName</td>
+                <td>@item.CustomerName</td>
+                <td>@item.OrderedOn.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>

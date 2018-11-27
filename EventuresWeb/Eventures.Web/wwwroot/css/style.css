@@ -4,7 +4,7 @@
 }
 
 a {
-    color: #F8F8FF;
+    color: black;
 }
 
 .half-width {
@@ -15,34 +15,31 @@ textarea {
     resize: none;
 }
 
-.eventures-bg-color {
-    background-color: #AFEEEE;
-    color: #161616;
-}
-
 .chushka-bg-color {
-    background-color: #DC143C;
-    color: #F8F8FF;
+    background-color: #AFEEEE;
+    color: black;
 }
-
 
 .nav-link-dark {
-    color: black
-}
-
-.nav-link-blue {
     color: #C0C0C0
 }
 
 .hr-2 {
-    height: 2px;
+    border-width: 2px !important;
+    border-color: #AFEEEE;
 }
 
 .hr-1 {
     height: 1px;
 }
-
-.table-hover>tbody>tr:hover {
+.bg-grey {
+    border-width: 2px !important;
+    border-color: grey;
+}
+.grey {
+    color: grey;
+}
+.table-hover > tbody > tr:hover {
     background-color: #DC143C;
     color: #F8F8FF;
 }

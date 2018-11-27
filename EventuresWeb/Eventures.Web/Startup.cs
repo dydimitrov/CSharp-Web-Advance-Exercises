@@ -59,6 +59,7 @@ namespace Eventures.Web
             });
 
             services.AddScoped<IEventService, EventService>();
+            services.AddScoped<IOrderService, OrderService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

@@ -9,13 +9,45 @@
             <li class="nav-item">
                 <a asp-controller="Home" asp-action="Index" class="nav-link nav-link-dark">Home</a>
             </li>
-            <li class="nav-item">
-                <a asp-controller="Events" asp-action="All" class="nav-link nav-link-dark">All Events</a>
+            <li class="dropdown show">
+                <a id="dropdownMenuLink"
+                   class="btn dropdown-toggle"
+                   href="#"
+                   role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                   style="color: black">
+                    Events
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a asp-controller="Events" asp-action="All" class="dropdown-item">All Events</a>
+                    <a asp-controller="Events" asp-action="MyEvents" class="dropdown-item">My Events</a>
+                    @if (this.User.IsInRole("Admin"))
+                    {
+                        <a asp-controller="Events" asp-action="Create" class="dropdown-item">Create Event</a>
+                    }
+                </div>
             </li>
             @if (this.User.IsInRole("Admin"))
             {
-                <li class="nav-item">
-                    <a asp-controller="Events" asp-action="Create" class="nav-link nav-link-dark">Create Event</a>
+                <li class="dropdown show">
+                    <a id="dropdownMenuLink"
+                       class="btn dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       style="color: black">
+                        Orders
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a asp-controller="Order" asp-action="All" class="dropdown-item">All Orders</a>
+                        
+                    </div>
                 </li>
             }
         </ul>

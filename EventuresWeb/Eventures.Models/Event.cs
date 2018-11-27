@@ -13,5 +13,7 @@ namespace Eventures.Models
         public DateTime End { get; set; }
         public int Tickets { get; set; }
         public decimal PricePerTicket { get; set; }
+
+        public ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 }

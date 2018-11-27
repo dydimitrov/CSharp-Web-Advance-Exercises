@@ -34,6 +34,7 @@ namespace Eventures.Services
         {
             var events = db.Events.Select(e => new EventListViewModel()
             {
+                Id = e.Id,
                 Name = e.Name,
                 Place = e.Place,
                 Start = e.Start,
@@ -41,6 +42,20 @@ namespace Eventures.Services
             })
             .ToList();
 
+            return events;
+        }
+        public IEnumerable<EventListViewModel> MyEvents(string username)
+        {
+            var events = db.Orders.Where(o => o.Customer.UserName == username)
+                .Select(e => new EventListViewModel()
+                {
+                    Name = e.Event.Name,
+                    Start = e.Event.Start,
+                    End = e.Event.End,
+                    TicketsCount = e.TicketsCount
+                })
+                .ToList();
+            
             return events;
         }
     }
